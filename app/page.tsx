@@ -1,24 +1,23 @@
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge"; // Corregido con @/ como hablamos
+import { Badge } from "@/components/ui/badge";
 import { Scale, Shield, Clock, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export default function InicioPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* SECCIÓN HERO (Bienvenida) */}
+      {/* SECCIÓN HERO */}
       <section className="bg-slate-50 py-20 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <Badge className="bg-[#C7A268]/10 text-[#C7A268] border-[#C7A268]/20 px-3 py-1">
-              Firma de Abogados en Barbosa
+              Abogados en Barbosa, Antioquia
             </Badge>
-            <h1 className="text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
+            <h1 className="text-5xl font-extrabold text-slate-900 leading-tight">
               Transparencia total en tus <span className="text-[#C7A268]">procesos legales</span>
             </h1>
-            <p className="text-lg text-slate-600 leading-relaxed">
-              Consulta en línea el estado de tus expedientes, chatea con tu abogado 
-              y firma digitalmente. Todo en un solo lugar para tu tranquilidad.
+            <p className="text-lg text-slate-600">
+              Consulta en línea el estado de tus expedientes y chatea con tu abogado en tiempo real.
             </p>
             <div className="flex gap-4">
               <Link href="/citas">
@@ -33,56 +32,31 @@ export default function InicioPage() {
               </Link>
             </div>
           </div>
-          <div className="relative">
-            <div className="bg-white p-8 rounded-2xl shadow-2xl border border-slate-100">
-              <div className="flex items-center justify-between mb-6">
-                <h3 className="font-bold text-slate-800">Portal de Clientes</h3>
-                <Badge variant="outline" className="text-green-600 border-green-200 bg-green-50">Demo Activa</Badge>
-              </div>
-              <div className="space-y-4">
-                <div className="h-32 bg-slate-50 rounded-xl border border-dashed border-slate-200 flex items-center justify-center">
-                  <p className="text-sm text-slate-400">Resumen de procesos activos</p>
-                </div>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="h-16 bg-slate-50 rounded-lg border border-slate-100"></div>
-                  <div className="h-16 bg-[#C7A268]/5 rounded-lg border border-[#C7A268]/20"></div>
-                </div>
-              </div>
+          <div className="bg-white p-8 rounded-2xl shadow-xl border border-slate-100">
+            <h3 className="font-bold text-slate-800 mb-4">Estado del Proceso</h3>
+            <div className="h-40 bg-slate-50 rounded-xl flex items-center justify-center border-dashed border-2 border-slate-200">
+              <p className="text-slate-400 italic">Panel de control del cliente</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SECCIÓN DE POR QUÉ ELEGIRNOS */}
-      <section className="py-20 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">¿Por qué Sello Legal?</h2>
-            <p className="text-slate-500 max-w-2xl mx-auto">Combinamos la experiencia jurídica tradicional con herramientas tecnológicas modernas.</p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="p-6 text-center space-y-4">
-              <div className="w-12 h-12 bg-[#C7A268]/10 rounded-full flex items-center justify-center mx-auto text-[#C7A268]">
-                <Scale size={24} />
-              </div>
-              <h3 className="font-bold text-xl">Justicia Efectiva</h3>
-              <p className="text-slate-600 italic">"Resultados tangibles para casos complejos en Barbosa y Medellín."</p>
-            </div>
-            <div className="p-6 text-center space-y-4">
-              <div className="w-12 h-12 bg-[#C7A268]/10 rounded-full flex items-center justify-center mx-auto text-[#C7A268]">
-                <Shield size={24} />
-              </div>
-              <h3 className="font-bold text-xl">Seguridad Digital</h3>
-              <p className="text-slate-600">Tus documentos están protegidos con encriptación de grado legal.</p>
-            </div>
-            <div className="p-6 text-center space-y-4">
-              <div className="w-12 h-12 bg-[#C7A268]/10 rounded-full flex items-center justify-center mx-auto text-[#C7A268]">
-                <Clock size={24} />
-              </div>
-              <h3 className="font-bold text-xl">Atención 24/7</h3>
-              <p className="text-slate-600">Revisa el avance de tu caso en cualquier momento desde tu celular.</p>
-            </div>
-          </div>
+      {/* SECCIÓN CARACTERÍSTICAS */}
+      <section className="py-20 px-6 bg-white grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="text-center p-6">
+          <Scale className="mx-auto text-[#C7A268] mb-4" size={40} />
+          <h3 className="font-bold text-xl mb-2">Justicia Efectiva</h3>
+          <p className="text-slate-600">Defensa técnica especializada en todas las áreas del derecho.</p>
+        </div>
+        <div className="text-center p-6">
+          <Shield className="mx-auto text-[#C7A268] mb-4" size={40} />
+          <h3 className="font-bold text-xl mb-2">Seguridad</h3>
+          <p className="text-slate-600">Tratamiento confidencial y seguro de toda tu información.</p>
+        </div>
+        <div className="text-center p-6">
+          <Clock className="mx-auto text-[#C7A268] mb-4" size={40} />
+          <h3 className="font-bold text-xl mb-2">Rapidez</h3>
+          <p className="text-slate-600">Gestión ágil para que tus trámites no se detengan.</p>
         </div>
       </section>
     </div>
