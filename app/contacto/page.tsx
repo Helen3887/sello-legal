@@ -33,7 +33,7 @@ export default function ContactoPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-slate-800">Teléfono y WhatsApp</h3>
-                  <p className="text-slate-600">+57 300 573 7222</p>
+                  <p className="text-slate-600">+57 3239498671</p>
                 </div>
               </CardContent>
             </Card>
@@ -45,14 +45,14 @@ export default function ContactoPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-slate-800">Correo Electrónico</h3>
-                  <p className="text-slate-600">contacto@sellolegal.com</p>
+                  <p className="text-slate-600">sellolegalsas@gmail.com</p>
                 </div>
               </CardContent>
             </Card>
 
             <div className="flex space-x-4 pt-4">
                <Button variant="outline" className="rounded-full border-[#C7A268] text-[#C7A268] hover:bg-[#C7A268] hover:text-white">
-                 <Instagram size={20} className="mr-2" /> Instagram
+                 <Instagram size={20} className="mr-2" /> Instagram sello_legal
                </Button>
                <Button variant="outline" className="rounded-full border-[#C7A268] text-[#C7A268] hover:bg-[#C7A268] hover:text-white">
                  <Facebook size={20} className="mr-2" /> Facebook
