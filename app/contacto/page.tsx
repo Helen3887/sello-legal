@@ -33,7 +33,7 @@ export default function ContactoPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-slate-800">Teléfono y WhatsApp</h3>
-                  <p className="text-slate-600">+57 3239498671</p>
+                  <p className="text-slate-600">+573239498671</p>
                 </div>
               </CardContent>
             </Card>
