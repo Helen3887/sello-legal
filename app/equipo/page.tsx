@@ -18,7 +18,7 @@ export default function EquipoPage() {
     },
     {
       nombre: "Julieta Sossa",
-      especialidad: "Derecho de Administartivo",
+      especialidad: "Derecho Administartivo",
       descripcion: "Experta en procesos de responsabilidad estatal, contratos públicos y recursos administrativos",
       icono: <BookOpen className="" />
     },
