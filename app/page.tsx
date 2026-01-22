@@ -9,11 +9,11 @@ import { Badge } from "@/components/ui/badge";
 
 const BRAND = { GOLD: "#C7A268", GOLD_HOVER: "#B8925F", BLACK: "#000000", WHITE: "#FFFFFF", BG: "#F9FAFB" };
 
-const PrimaryButton = (props) => (
+const PrimaryButton = (props: any) => (
   <Button {...props} className={`${props.className || ""} bg-[#C7A268] hover:bg-[#B8925F] text-white border-none`} />
 );
 
-const OutlineGoldButton = (props) => (
+const OutlineGoldButton = (props: any) => (
   <Button {...props} variant="outline" className={`${props.className || ""} border-[#C7A268] text-[#C7A268] hover:bg-[#C7A268] hover:text-white`} />
 );
 
