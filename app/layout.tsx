@@ -43,7 +43,7 @@ export default function RootLayout({
 
         {/* BOTÓN FLOTANTE DE WHATSAPP */}
         <a
-          href="https://wa.me/573005737222?text=Hola%20Sello%20Legal,%20necesito%20una%20asesoría"
+          href="https://wa.me/573239498671?text=Hola%20Sello%20Legal,%20necesito%20una%20asesoría"
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:bg-[#128C7E] transition-all z-[60] flex items-center justify-center hover:scale-110"
