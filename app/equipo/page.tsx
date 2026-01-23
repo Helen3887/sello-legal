@@ -11,7 +11,7 @@ export default function EquipoPage() {
       icono: <Scale className="" />
     },
     {
-      nombre: "Oscar Armando posada",
+      nombre: "Oscar Armando Posada",
       especialidad: "Especialista en Derecho Ambiental",
       descripcion: "Especialista en gestión de licencias, normativa vigente y defensa en procesos sancionatorios ambientales.",
       icono: <Award className="" />
