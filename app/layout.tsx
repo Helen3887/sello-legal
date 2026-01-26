@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Script from "next/script";
+import Image from "next/image"; // IMPORTANTE: Añadimos esto para el logo
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,9 +22,17 @@ export default function RootLayout({
       <body className={inter.className}>
         {/* BARRA DE NAVEGACIÓN RESPONSIVA MEJORADA */}
         <nav className="flex flex-wrap items-center justify-between px-4 md:px-8 py-4 bg-white border-b sticky top-0 z-50 shadow-sm">
-          {/* LOGO: Se mantiene a la izquierda */}
-          <Link href="/" className="text-xl font-bold text-[#C7A268] flex-shrink-0">
-            Sello Legal
+          
+          {/* LOGO: Reemplazamos el texto por la imagen */}
+          <Link href="/" className="flex-shrink-0 hover:opacity-80 transition-opacity">
+            <Image 
+              src="/logo-sello-legal.png" 
+              alt="Sello Legal" 
+              width={140} 
+              height={45} 
+              className="h-9 w-auto md:h-11 object-contain"
+              priority
+            />
           </Link>
           
           {/* BOTÓN CITAS: Se mantiene a la derecha en móviles */}
