@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Mail, Instagram, Facebook, Smartphone, Building2, Clock, Navigation } from "lucide-react";
+import { MapPin, Mail, Instagram, Facebook, Smartphone, Building2, Clock, Navigation } from "lucide-react";
 
 export default function ContactoPage() {
   const sedes = [
@@ -10,19 +10,19 @@ export default function ContactoPage() {
       nombre: "Sede Aburrá Norte - Barbosa",
       dir: "Calle 16 No. 13-28 Oficina 101. Senderos del Parque PH",
       ciudad: "Barbosa, Antioquia",
-      mapLink: "https://www.google.com/maps/search/?api=1&query=Sello+Legal+Barbosa+Antioquia"
+      mapLink: "https://maps.google.com/?q=Calle+16+No.+13-28+Barbosa+Antioquia"
     },
     {
       nombre: "Sede Aburrá Norte - Donmatías",
       dir: "Calle 29 No. 30-35 Local 4 Centro Comercial El 26",
       ciudad: "Donmatías, Antioquia",
-      mapLink: "https://www.google.com/maps/search/?api=1&query=Calle+29+30-35+Donmatias"
+      mapLink: "https://maps.google.com/?q=Calle+29+No.+30-35+Donmatias+Antioquia"
     },
     {
       nombre: "Sede Oriente - La Ceja",
       dir: "Carrera 21 No. 18-11 Oficina 201",
       ciudad: "La Ceja, Antioquia",
-      mapLink: "https://www.google.com/maps/search/?api=1&query=Carrera+21+18-11+La+Ceja"
+      mapLink: "https://maps.google.com/?q=Carrera+21+No.+18-11+La+Ceja+Antioquia"
     }
   ];
 
@@ -67,6 +67,7 @@ export default function ContactoPage() {
             <h2 className="text-2xl font-bold text-slate-900 mb-6">Canales de Atención</h2>
             
             <div className="grid md:grid-cols-2 gap-6">
+              {/* LÍNEAS MÓVILES */}
               <Card className="border-none shadow-md rounded-2xl bg-white">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4 text-[#C7A268]">
@@ -75,21 +76,22 @@ export default function ContactoPage() {
                   </div>
                   <div className="space-y-3 text-slate-600">
                     <div className="flex justify-between border-b border-slate-50 pb-2">
-                      <span>Principal / WhatsApp:</span>
-                      <span className="font-bold text-slate-900">(300) 573 7222</span>
+                      <span>WhatsApp:</span>
+                      <a href="https://wa.me/573005737222" className="font-bold text-slate-900 hover:text-[#C7A268] transition-colors">(300) 573 7222</a>
                     </div>
                     <div className="flex justify-between border-b border-slate-50 pb-2">
                       <span>Sede Oriente:</span>
-                      <span className="font-bold text-slate-900">(301) 748 8981</span>
+                      <a href="tel:+573017488981" className="font-bold text-slate-900 hover:text-[#C7A268] transition-colors">(301) 748 8981</a>
                     </div>
                     <div className="flex justify-between">
-                      <span>Móvil Adicional:</span>
-                      <span className="font-bold text-slate-900">(301) 188 0633</span>
+                      <span>Sede Don Matías:</span>
+                      <a href="tel:+573148438382" className="font-bold text-slate-900 hover:text-[#C7A268] transition-colors">(314) 843 8382</a>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
+              {/* PBX FIJO */}
               <Card className="border-none shadow-md rounded-2xl bg-white">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4 text-[#C7A268]">
@@ -97,26 +99,31 @@ export default function ContactoPage() {
                     <h3 className="font-bold text-slate-800">PBX Barbosa</h3>
                   </div>
                   <div className="flex flex-col justify-center h-full pt-2">
-                    <p className="text-3xl font-extrabold text-slate-900">(604) 5576684</p>
+                    <a href="tel:+576045576684" className="text-3xl font-extrabold text-slate-900 hover:text-[#C7A268] transition-colors">(604) 5576684</a>
                     <p className="text-slate-500 text-sm mt-2 italic">Atención en horario de oficina</p>
                   </div>
                 </CardContent>
               </Card>
 
+              {/* CORREOS ELECTRÓNICOS (3 COLUMNAS) */}
               <Card className="border-none shadow-md rounded-2xl bg-white md:col-span-2">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4 text-[#C7A268]">
                     <Mail size={24} />
                     <h3 className="font-bold text-slate-800">Correos Electrónicos</h3>
                   </div>
-                  <div className="grid md:grid-cols-2 gap-8">
+                  <div className="grid md:grid-cols-3 gap-4">
                     <div className="p-4 bg-slate-50 rounded-xl">
-                      <p className="text-xs font-bold text-[#C7A268] uppercase mb-1">General / Abogados</p>
-                      <p className="text-slate-900 font-medium">abogados@sello-legal.com</p>
+                      <p className="text-xs font-bold text-[#C7A268] uppercase mb-1">General</p>
+                      <a href="mailto:abogados@sello-legal.com" className="text-slate-900 font-medium text-sm break-all hover:underline">Sellolegalsas@gmail.com</a>
                     </div>
                     <div className="p-4 bg-slate-50 rounded-xl">
                       <p className="text-xs font-bold text-[#C7A268] uppercase mb-1">Sede Oriente</p>
-                      <p className="text-slate-900 font-medium">oriente@sello-legal.com</p>
+                      <a href="mailto:oriente@sello-legal.com" className="text-slate-900 font-medium text-sm break-all hover:underline">abogasdos@sello-legal.com</a>
+                    </div>
+                    <div className="p-4 bg-slate-50 rounded-xl">
+                      <p className="text-xs font-bold text-[#C7A268] uppercase mb-1">Sede Don Matías</p>
+                      <a href="mailto:donmatias@sello-legal.com" className="text-slate-900 font-medium text-sm break-all hover:underline">sellolegal.norte@gmail.com</a>
                     </div>
                   </div>
                 </CardContent>
@@ -129,7 +136,7 @@ export default function ContactoPage() {
                  <Instagram size={20} className="mr-2" /> @sello_legal
                </Button>
                <Button variant="outline" className="rounded-full border-[#C7A268] text-[#C7A268] hover:bg-[#C7A268] hover:text-white px-8 h-14">
-                 <Facebook size={20} className="mr-2" /> Facebook
+                 <Facebook size={20} className="mr-2" /> Sello Legal Abogados
                </Button>
             </div>
           </div>
@@ -137,11 +144,11 @@ export default function ContactoPage() {
           {/* FORMULARIO DE CONTACTO */}
           <div className="bg-white p-8 rounded-[3rem] shadow-2xl border border-slate-100 relative overflow-hidden">
             <h3 className="text-2xl font-bold mb-6 text-slate-800">Envíanos un mensaje</h3>
-            <form className="space-y-4">
-              <input type="text" placeholder="Nombre completo" className="w-full p-4 rounded-xl bg-slate-50 border-none focus:ring-2 focus:ring-[#C7A268] outline-none" />
-              <input type="email" placeholder="Correo electrónico" className="w-full p-4 rounded-xl bg-slate-50 border-none focus:ring-2 focus:ring-[#C7A268] outline-none" />
-              <textarea placeholder="¿En qué podemos ayudarte?" className="w-full p-4 h-40 rounded-xl bg-slate-50 border-none focus:ring-2 focus:ring-[#C7A268] outline-none resize-none"></textarea>
-              <Button className="w-full bg-[#C7A268] hover:bg-[#B8925F] text-white py-8 text-lg rounded-xl shadow-xl transition-all">
+            <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+              <input type="text" placeholder="Nombre completo" className="w-full p-4 rounded-xl bg-slate-50 border-none focus:ring-2 focus:ring-[#C7A268] outline-none" required />
+              <input type="email" placeholder="Correo electrónico" className="w-full p-4 rounded-xl bg-slate-50 border-none focus:ring-2 focus:ring-[#C7A268] outline-none" required />
+              <textarea placeholder="¿En qué podemos ayudarte?" className="w-full p-4 h-40 rounded-xl bg-slate-50 border-none focus:ring-2 focus:ring-[#C7A268] outline-none resize-none" required></textarea>
+              <Button type="submit" className="w-full bg-[#C7A268] hover:bg-[#B8925F] text-white py-8 text-lg rounded-xl shadow-xl transition-all">
                 Enviar Mensaje
               </Button>
               <div className="flex items-center justify-center gap-2 text-[11px] text-slate-400 mt-4">
