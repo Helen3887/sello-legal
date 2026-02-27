@@ -100,7 +100,8 @@ export default function ContactoPage() {
                   </div>
                   <div className="flex flex-col justify-center h-full pt-2">
                     <a href="tel:+576045576684" className="text-3xl font-extrabold text-slate-900 hover:text-[#C7A268] transition-colors">(604) 5576684</a>
-                    <p className="text-slate-500 text-sm mt-2 italic">Atención en horario de oficina</p>
+                    <p className="text-slate-500 text-sm mt-2 italic">Atención en horario de oficina 
+                      de 8:00 AM a 5:00 PM</p>
                   </div>
                 </CardContent>
               </Card>

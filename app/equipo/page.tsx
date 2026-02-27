@@ -22,6 +22,18 @@ export default function EquipoPage() {
       descripcion: "Experta en procesos de responsabilidad estatal, contratos públicos y recursos administrativos",
       icono: <BookOpen className="" />
     },
+    {
+      nombre: "Santiago Florez Galvis",
+      especialidad: "Auxiliar Juridico y Asesor Comercial",
+      descripcion: "Apoyo en trámites legales, atención al cliente y asesoría comercial para garantizar una experiencia integral, Sede Barbosa.",
+      icono: <BookOpen className="" />
+    },
+    {
+      nombre: " Dollys Yesenia  Guerrero Vanegas",
+      especialidad: "Auxiliar Juridico y Asesor Comercial",
+      descripcion: "Apoyo en trámites legales, atención al cliente y asesoría comercial para garantizar una experiencia integral Sede Don Matias.",
+      icono: <BookOpen className="" />
+    },
     // Si quieres agregar un cuarto, solo copia desde { hasta } y pégalo aquí abajo
   ];
 
