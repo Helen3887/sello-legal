@@ -81,7 +81,7 @@ export default function ContactoPage() {
                     </div>
                     <div className="flex justify-between border-b border-slate-50 pb-2">
                       <span>Sede Oriente:</span>
-                      <a href="tel:+573017488981" className="font-bold text-slate-900 hover:text-[#C7A268] transition-colors">(301) 748 8981</a>
+                      <a href="tel:+573017488981" className="font-bold text-slate-900 hover:text-[#C7A268] transition-colors">(323) 9498671</a>
                     </div>
                     <div className="flex justify-between">
                       <span>Sede Don Matías:</span>
